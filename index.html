@@ -5,11 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Weather Dashboard</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="row m-1 d-flex justify-content-center">
+            <header class="d-flex justify-content-center">
+                <h1>Weather Dashboard</h1>
+            </header>
 
+        </div>
+    </div>
+    <div>
+        <h2>Search for a City:</h2>
+    </div>
+    <div>
+        <input id="cityName" placeholder="Enter a City Name">
+    </div>
+    <div>
+        <button type="button">Search</button>
+    </div>
+    <div id="cityInput"></div>
+
+    <div class="col-9">
+        <div id="cityInfoRow" class="flex-row">
+            <div id="cityInfo" class="mt-3 border border-dark">
+                <div class="row m-3">
+                    <h2 id="currentCity"></h2><img id="weatherIcon" src="">
+                </div>
+                <div class="row m-3">
+                    <p>Temp:</p>
+                    <p id="currentTemp" class="mx-3"></p>
+                </div>
+                <div class="row m-3">
+                    <p>Wind:</p>
+                    <p id="currentWind" class="mx-3"></p>
+                </div>
+                <div class="row m-3">
+                    <p>Humidity:</p>
+                    <p id="currentHumidity" class="mx-3"></p>
+                </div>
+                <div class="row m-3">
+                    <p>UV Index:</p>
+                    <p id="currentUVI" class="mx-3"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
