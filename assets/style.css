@@ -1,0 +1,18 @@
+#search {
+  background-color: blueviolet;
+}
+#current {
+  background-color: bisque;
+}
+#forecast {
+  background-color: coral;
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  min-height: 100px;
+  min-width: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+}

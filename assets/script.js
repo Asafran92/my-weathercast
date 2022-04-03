@@ -1,7 +1,7 @@
 var apiKey = "2e87b116b64f5074218c9d8fc477d9b1";
 
 function citySearch() {
-  var cityName = document.getElementById("cityName").value;
+  var cityName = document.getElementById("city-name").value;
   fetch(
     `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`
   )
