@@ -1,11 +1,16 @@
 #search {
-  background-color: blueviolet;
+  background-color: cadetblue;
 }
-#current {
-  background-color: bisque;
+
+header {
+  background-color: darkcyan;
 }
+
+#results {
+  background-color: darkcyan;
+}
+
 #forecast {
-  background-color: coral;
   display: flex;
   justify-content: space-around;
 }
