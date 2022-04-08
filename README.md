@@ -1,4 +1,4 @@
-# Weather-Forecast, a Weather Tracking App
+# My-weathercast, a Weather Tracking App
 
 ## Description:
 
