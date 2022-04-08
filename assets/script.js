@@ -3,7 +3,7 @@ var searchedName;
 var searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
 function citySearch(cityName) {
   fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`
   )
     .then((response) => {
       return response.json();
@@ -56,7 +56,7 @@ function displayData(data) {
   ).toDateString()}`;
   document.getElementById(
     "currentIcon"
-  ).src = `http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`;
+  ).src = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`;
   document.getElementById(
     "current-temp"
   ).innerText = `Temp: ${data.current.temp}`;
@@ -77,7 +77,7 @@ function displayData(data) {
     card.innerHTML = `<h4>${new Date(
       data.daily[i].dt * 1000
     ).toDateString()}</h4>
-    <div> <img src="http://openweathermap.org/img/wn/${
+    <div> <img src="https://openweathermap.org/img/wn/${
       data.daily[i].weather[0].icon
     }.png" /> </div>
     <p>
